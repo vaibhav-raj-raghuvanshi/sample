@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #e6eff2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 300px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding-bottom: 20px;
+        }
+
+        .imgCont {
+            padding: 5px;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .imgIn {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            justify-self: center;
+            object-fit: cover;
+        }
+
+        .elseCont {
+            display: flex;
+            gap: 10px;
+            margin: 15px;
+        }
+
+        .elseContIn1 {
+            font-size: 12px;
+            padding: 5px 12px;
+            background-color: #f0f0f0;
+            color: #333;
+            border-radius: 15px;
+        }
+
+        h3 {
+            font-size: 20px;
+            margin: 0 15px 10px;
+            color: #222;
+        }
+
+        .content {
+            font-size: 14px;
+            margin: 0 15px 20px;
+            color: #555;
+        }
+
+        .read {
+            display: flex;
+            justify-content: center;
+        }
+
+        .read button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 20px;
+            background-color: #d3e5ff;
+            color: #1d4ed8;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .read button:hover {
+            background-color: #bdd8ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="imgCont">
+            <img src="images/exercise3/momDad.jpg" class="imgIn" alt="THE MAIN IMAGE">
+        </div>
+        <div class="elseCont">
+            <div class="elseContIn1">Nature</div>
+            <div class="elseContIn1">Lake</div>
+        </div>
+        <h3>Rajesh & Vandana</h3>
+        <div class="content">
+            "9 years of friendship, countless memories, and a bond that only grows stronger with time. Vandana & Rajesh
+            — a perfect example of love rooted in understanding, laughter, and unwavering companionship. ❤️"
+        </div>
+        <div class="read">
+            <button>Read More</button>
+        </div>
+    </div>
+    <audio src="audio/baith.mp3#t=150" autoplay controls hidden></audio>
+</body>
+
+</html>
